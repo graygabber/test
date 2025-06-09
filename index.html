@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mel Spectrogram Comparison</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
+      vertical-align: top;
+    }
+    img {
+      height: 100px;
+      display: block;
+      margin: 0 auto 8px;
+    }
+    audio {
+      width: 100%;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      caption-side: top;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <caption>📊 Mel + Audio Output Comparison</caption>
+  <tr>
+    <th>Text</th>
+    <th>Ref.MEL</th>
+    <th>M1</th>
+    <th>M2</th>
+    <th>M3</th>
+  </tr>
+  <tr>
+    <td>Hello, how are you?</td>
+    <td>
+      <img src="images/ref.png" alt="Ref MEL">
+      <audio controls>
+        <source src="audio/ref.wav" type="audio/wav">
+        Your browser does not support audio.
+      </audio>
+    </td>
+    <td>
+      <img src="images/m1.png" alt="M1 MEL">
+      <audio controls>
+        <source src="audio/m1.wav" type="audio/wav">
+      </audio>
+    </td>
+    <td>
+      <img src="images/m2.png" alt="M2 MEL">
+      <audio controls>
+        <source src="audio/m2.wav" type="audio/wav">
+      </audio>
+    </td>
+    <td>
+      <img src="images/m3.png" alt="M3 MEL">
+      <audio controls>
+        <source src="audio/m3.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- Добавь больше строк по необходимости -->
+</table>
+
+</body>
+</html>
